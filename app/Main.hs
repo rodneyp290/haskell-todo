@@ -1,6 +1,12 @@
+{-# LANGUAGE OverloadedStrings #-}
 module Main where
 
-import Lib
+import Task
+import Data.Aeson
+import qualified Data.ByteString.Lazy as BS
 
 main :: IO ()
-main = someFunc
+main = BS.putStr $ encode Task { title = "Hello"
+                          , desc  = "World"
+                          , done  = False
+                          }
