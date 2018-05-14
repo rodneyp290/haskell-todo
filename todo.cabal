@@ -28,6 +28,8 @@ library
       src
   build-depends:
       base >=4.7 && <5 
+      , text
+      , unordered-containers
   default-language: Haskell2010
 
 executable todo-exe
@@ -40,6 +42,8 @@ executable todo-exe
   build-depends:
       base >=4.7 && <5
     , todo
+    , text
+    , unordered-containers
   default-language: Haskell2010
 
 test-suite todo-test
