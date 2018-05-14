@@ -21,7 +21,7 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      Task
   other-modules:
       Paths_todo
   hs-source-dirs:
