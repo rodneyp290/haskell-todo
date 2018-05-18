@@ -14,5 +14,9 @@ data Task = Task
 
 type Lists = HashMap Text [Task]
 
+addTask :: Lists -> Text -> Task -> Lists
+addTask current list task = insertWith listAdd list [task] current
+  where listAdd old new = old ++ new
+
 $(deriveJSON defaultOptions ''Task ) -- "Haskell Macro" / "Template Haskell"
 -- TIP: put templates at bottom of code
