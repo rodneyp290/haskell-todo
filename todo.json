@@ -1,0 +1,7 @@
+{
+  "first_list": [{
+    "title": "Remove Todo",
+    "desc": "I have too many todos, I need to remove some",
+    "done": true
+  }]
+}
